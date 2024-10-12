@@ -79,3 +79,29 @@ function init() {
 }
 
 init();
+
+
+
+
+
+
+
+//Récuperer les works à partir de l'api//
+//Se positionner dans le conteneur des works//
+//Vider le contenue//
+//Parcourir les works recuperer sur l'api//
+//Construit l' element a inserer//
+//Inserer l'element//
+
+
+
+
+//Detecter le declenchement du click sur ce connecter//
+//Recuperer login et mdp renseigner par l'utilisateur//
+//Appeler l'api//
+//Recuperer les information a partir de l'api login//
+//Si erreur Afficher le message a l'utilisateur//
+    //Se ppositionner sur le conteneur//
+    //Vider le contenue//
+    //Inserer le message//
+//Si c'est un succes,Afficher la page d'acceuil a nouveau//
