@@ -62,6 +62,18 @@ section {
 	margin: 50px 0
 }
 
+#bandeau {
+    display: none;
+    background-color:black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 h1{
 	display: flex;
 	flex-direction: column;
