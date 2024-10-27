@@ -54,8 +54,9 @@ function filterWorksByCategory(categoryId) {
     displayWorks(filteredWorks);
 }
 
-
+// Fonction d'initialisation au chargement de la page//
 function init() {
+    //Afficher les works
     fetch(worksApiURL)
         .then(response => response.json())
         .then(data => {
@@ -66,7 +67,7 @@ function init() {
         .catch(error => {
             console.error('Erreur lors de la récupération des travaux:', error);
         });
-
+    //Affichrer les categories
     fetch(categoriesApiURL)
         .then(response => response.json())
         .then(data => {
@@ -76,9 +77,26 @@ function init() {
         .catch(error => {
             console.error('Erreur lors de la récupération des catégories:', error);
         });
+        //Afficher le bandeau
+    displaybandeau();
 }
+// Appel de la fonction d'initialisation//
 
 init();
+
+function displaybandeau() { 
+    //Verifier si l'utilisateur est connecté
+    if (sessionStorage.getItem('token')) {
+        const bandeau = document.getElementById('bandeau');
+        bandeau.style.display = 'block';
+    }
+    //Si connnecté afficher le bandeau
+
+    //Sinon masqué le bandeau
+
+}
+    
+
 
 
 
@@ -105,3 +123,7 @@ init();
     //Vider le contenue//
     //Inserer le message//
 //Si c'est un succes,Afficher la page d'acceuil a nouveau//
+
+
+
+
